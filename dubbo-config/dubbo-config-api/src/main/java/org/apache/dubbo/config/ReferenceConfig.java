@@ -180,6 +180,7 @@ public class ReferenceConfig<T> extends ReferenceConfigBase<T> {
     }
 
     public synchronized void init() {
+        // return if it is already initialized
         if (initialized) {
             return;
         }
